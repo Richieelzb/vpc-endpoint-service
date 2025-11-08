@@ -1,0 +1,20 @@
+data "aws_ami" "my-data-ami" {
+  most_recent = true
+  owners      = ["amazon"]
+
+  filter {
+    name   = "name"
+    //values = ["al2023-*-x86_64"]
+    values = ["amzn2-*-x86_64-gp2"]
+  }
+
+  filter {
+    name   = "root-device-type"
+    values = ["ebs"]
+  }
+
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+}
