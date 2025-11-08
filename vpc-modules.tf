@@ -45,8 +45,8 @@ module "vpc2" {
   enable_dns_hostnames = true
   enable_dns_support   = true
 
-  //enable_nat_gateway = var.vpc_enable_nat_gateway_vpc2
-  //single_nat_gateway = var.vpc_single_nat_gateway_vpc2
+  enable_nat_gateway = var.vpc_enable_nat_gateway_vpc2
+  single_nat_gateway = var.vpc_single_nat_gateway_vpc2
 
   enable_dhcp_options     = true
   map_public_ip_on_launch = true
