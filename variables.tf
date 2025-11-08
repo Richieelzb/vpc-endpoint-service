@@ -65,10 +65,12 @@ variable "vpc_private_subnets_vpc2" {
 
 variable "vpc_enable_nat_gateway_vpc2" {
   type = bool
+  default = false
 }
 
 variable "vpc_single_nat_gateway_vpc2" {
   type = bool
+  default = false
 }
 
 //////generals/////////////////////////////
