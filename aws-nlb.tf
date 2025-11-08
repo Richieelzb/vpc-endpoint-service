@@ -10,7 +10,7 @@ resource "aws_lb" "internal_nlb" {
 resource "aws_lb_target_group" "nlb_tg" {
   name     = "lzb-nlb-targets"
   port     = 80
-  protocol = "HTTP"
+  protocol = "TCP"
   vpc_id   = module.vpc2.vpc_id
 }
 
