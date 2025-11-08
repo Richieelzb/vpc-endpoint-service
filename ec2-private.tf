@@ -18,9 +18,7 @@ resource "aws_instance" "ec2-private-1" {
   key_name             = var.key-pair
   subnet_id            = module.vpc2.private_subnets[2]
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
-
   vpc_security_group_ids = [aws_security_group.private-sg2-ec2.id]
-  count                  = 1
   tags = {
     Name = "ec2-private-1"
   }
@@ -32,9 +30,7 @@ resource "aws_instance" "ec2-private-2" {
   key_name             = var.key-pair
   subnet_id            = module.vpc2.private_subnets[3]
   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
-
   vpc_security_group_ids = [aws_security_group.private-sg2-ec2.id]
-  count                  = 1
   tags = {
     Name = "ec2-private-2"
   }
