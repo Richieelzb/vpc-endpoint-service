@@ -12,6 +12,6 @@ vpc_name_vpc2               = "vpc-2"
 vpc_cidr_block_vpc2         = "20.0.0.0/16"
 vpc_availability_zones_vpc2 = ["ap-south-1a", "ap-south-1b"]
 vpc_private_subnets_vpc2    = ["20.0.0.0/17", "20.0.128.0/18", "20.0.192.0/19", "20.0.224.0/19"]
-vpc_single_nat_gateway_vpc2 = true
+vpc_single_nat_gateway_vpc2 = false
 vpc_enable_nat_gateway_vpc2 = false
 
