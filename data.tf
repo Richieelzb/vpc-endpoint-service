@@ -4,8 +4,8 @@ data "aws_ami" "my-data-ami" {
 
   filter {
     name   = "name"
-    //values = ["al2023-*-x86_64"]
-    values = ["amzn2-*-x86_64-gp2"]
+    values = ["al2023-*-x86_64"]
+    //values = ["amzn2-*-x86_64-gp2"]
   }
 
   filter {
