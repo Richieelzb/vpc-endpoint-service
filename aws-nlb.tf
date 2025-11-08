@@ -24,17 +24,18 @@ resource "aws_lb_listener" "listener" {
     target_group_arn = aws_lb_target_group.nlb_tg.arn
   }
 }
-
+/*
 resource "aws_lb_target_group_attachment" "web_attachment-1" {
-  count            = 1
+  count            = 2
   target_group_arn = aws_lb_target_group.nlb_tg.arn
-  target_id        = aws_instance.ec2-private-1.id
+  target_id        = aws_instance.ec2-private-1[count.index].id
   port             = 80
 }
 
 resource "aws_lb_target_group_attachment" "web_attachment-2" {
   count            = 1
   target_group_arn = aws_lb_target_group.nlb_tg.arn
-  target_id        = aws_instance.ec2-private-2.id
+  target_id        = aws_instance.ec2-private-2[count.index].id
   port             = 80
 }
+*/
