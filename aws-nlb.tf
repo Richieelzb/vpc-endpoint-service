@@ -3,7 +3,7 @@ resource "aws_lb" "internal_nlb" {
   name               = "lzb-nlb-project"
   internal           = true
   load_balancer_type = "network"
-  security_groups    = [aws_security_group.private-sg-ec2.id]
+  //security_groups    = [aws_security_group.private-sg-ec2.id]
   subnets            = [module.vpc2.private_subnets[0],module.vpc2.private_subnets[1]]
 }
 
