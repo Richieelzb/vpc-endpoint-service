@@ -4,7 +4,7 @@ resource "aws_instance" "ec2-vm-private" {
   instance_type = var.instance-type-list[0]
   key_name      = var.key-pair
   //user_data              = file("${path.module}/app-install.sh")
-  subnet_id              = module.vpc1.private_subnets[0]
+  subnet_id              = module.vpc1.private_subnets[1]
   vpc_security_group_ids = [aws_security_group.private-sg1-ec2.id]
   #count                  = 3
   tags = {

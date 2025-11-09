@@ -1,4 +1,4 @@
-/*resource "aws_ec2_instance_connect_endpoint" "connect_endpoint" {
+resource "aws_ec2_instance_connect_endpoint" "connect_endpoint" {
   subnet_id            = module.vpc1.private_subnets[0]
 
   security_group_ids = [
@@ -8,4 +8,4 @@
   tags = {
     Name = "ec2-instance-connect-endpoint"
   }
-}*/
+}
