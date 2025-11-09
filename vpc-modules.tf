@@ -36,7 +36,7 @@ module "vpc2" {
 
   azs             = var.vpc_availability_zones_vpc2
   private_subnets = var.vpc_private_subnets_vpc2
-  //public_subnets  = var.vpc_public_subnets_vpc2
+  public_subnets  = var.vpc_public_subnets_vpc2
 
   manage_default_network_acl    = false
   manage_default_route_table    = false
