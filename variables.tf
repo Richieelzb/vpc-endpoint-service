@@ -26,6 +26,7 @@ variable "vpc_cidr_block_vpc1" {
 
 variable "vpc_public_subnets_vpc1" {
   type = list(string)
+  default =  []
 }
 
 variable "vpc_private_subnets_vpc1" {

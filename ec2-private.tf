@@ -3,7 +3,7 @@ resource "aws_instance" "ec2-vm-private" {
   //ami = "ami-0bc691261a82b32bc"
   instance_type = var.instance-type-list[0]
   key_name      = var.key-pair
-  //user_data              = file("${path.module}/app-install.sh")
+  iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
   subnet_id              = module.vpc1.private_subnets[1]
   vpc_security_group_ids = [aws_security_group.private-sg1-ec2.id]
   #count                  = 3
