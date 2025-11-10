@@ -6,7 +6,6 @@ variable "instance-type-list" {
 }
 
 variable "key-pair" {
-  default = "lupfumo-key-mumbai"
 }
 
 ///VPC Modules-1 ///////////////////////////////////////////////////////////////////////////
@@ -25,8 +24,8 @@ variable "vpc_cidr_block_vpc1" {
 }
 
 variable "vpc_public_subnets_vpc1" {
-  type = list(string)
-  default =  []
+  type    = list(string)
+  default = []
 }
 
 variable "vpc_private_subnets_vpc1" {
@@ -57,8 +56,8 @@ variable "vpc_cidr_block_vpc2" {
 }
 
 variable "vpc_public_subnets_vpc2" {
-  type = list(string)
-  default =  []
+  type    = list(string)
+  default = []
 }
 
 variable "vpc_private_subnets_vpc2" {
@@ -66,18 +65,17 @@ variable "vpc_private_subnets_vpc2" {
 }
 
 variable "vpc_enable_nat_gateway_vpc2" {
-  type = bool
+  type    = bool
   default = false
 }
 
 variable "vpc_single_nat_gateway_vpc2" {
-  type = bool
+  type    = bool
   default = false
 }
 
 //////generals/////////////////////////////
 variable "aws-region" {
-  default = "ap-south-1"
 }
 
 variable "environment" {

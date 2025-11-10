@@ -1,6 +1,6 @@
 
 resource "aws_vpc_endpoint_service" "nlb_service" {
-  acceptance_required    = true
+  acceptance_required        = true
   network_load_balancer_arns = [aws_lb.internal_nlb.arn]
   //private_dns_name            = "service.example.com"  # Your custom DNS name
   //private_dns_enabled         = true

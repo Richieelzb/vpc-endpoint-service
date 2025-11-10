@@ -4,7 +4,7 @@ resource "aws_lb" "internal_nlb" {
   internal           = true
   load_balancer_type = "network"
   //security_groups    = [aws_security_group.private-sg-ec2.id]
-  subnets            = [module.vpc2.private_subnets[0],module.vpc2.private_subnets[1]]
+  subnets = [module.vpc2.private_subnets[0], module.vpc2.private_subnets[1]]
 }
 
 resource "aws_lb_target_group" "nlb_tg" {

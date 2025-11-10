@@ -1,4 +1,4 @@
-resource "aws_vpc_endpoint" "ec2" {
+/*resource "aws_vpc_endpoint" "ec2" {
   vpc_id            = module.vpc1.vpc_id
   service_name      = "com.amazonaws.ap-south-1.sqs"
   vpc_endpoint_type = "Interface"
@@ -10,4 +10,4 @@ resource "aws_vpc_endpoint" "ec2" {
   ]
 
   private_dns_enabled = false
-}
+}*/
