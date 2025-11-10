@@ -14,7 +14,7 @@ resource "aws_instance" "ec2-vm-private" {
 
 resource "aws_instance" "ec2-private-1" {
   //ami                    = "ami-0c93cc426b63c7cf2"    //sandbox
-  ami                    = "ami-06297e16b71156b52" //personal
+  ami                    = "ami-0ac9ad1a4783969f7" //personal
   instance_type          = var.instance-type-list[0]
   key_name               = var.key-pair
   subnet_id              = module.vpc2.private_subnets[2]
@@ -27,7 +27,7 @@ resource "aws_instance" "ec2-private-1" {
 
 resource "aws_instance" "ec2-private-2" {
   //ami                    = "ami-0c93cc426b63c7cf2"         //sandbox
-  ami                    = "ami-06297e16b71156b52" //personal
+  ami                    = "ami-0ac9ad1a4783969f7" //personal
   instance_type          = var.instance-type-list[0]
   key_name               = var.key-pair
   subnet_id              = module.vpc2.private_subnets[3]
