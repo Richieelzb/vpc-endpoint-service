@@ -7,10 +7,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-practice-lzb-001" //personal account
-    //bucket = "terraform-bucket-lzb-001"       //sandbox account
+    //bucket = "terraform-practice-lzb-001" //personal account
+    bucket = "terraform-bucket-lzb-001" //sandbox account
     key    = "endpoint/terraform.tfstate"
-    region = "eu-west-1"
+    region = "ap-south-1" //sandbox
+    //region = "eu-west-1"         //personal
     //use_lockfile = true
   }
 }
